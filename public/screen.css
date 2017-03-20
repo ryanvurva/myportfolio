@@ -17,15 +17,18 @@ header {
     width: 100%;
     height: 800px;
     display: flex;
-    /*align-items: center;*/
     justify-content: space-around;
     margin-top: 0px;
     margin-left: 0px;
 }
 
+h2 {
+    margin: 0px;
+}
+
 .hello {
     background-color: #fff;
-    position:absolute;
+    position: absolute;
     padding: 5px 25px 10px 25px;
     border-radius: 4px;
     margin-top: 60px;
@@ -37,25 +40,19 @@ header {
 }
 
 .hello::after {
-  content: url(images/tri.png);
-  position: relative;
-  top: 34px;
-  left: 0px;
-}
-
-.tri {
-    position: fixed;
-    top: 0px;
+    content: url(images/tri.png);
+    position: relative;
+    top: 34px;
     left: 0px;
-    opacity: 0.7;
 }
 
 .slider {
     background-color: #272827;
+    color: #fff;
     opacity: 0.9;
     width: 100%;
-    height: 500px;
     margin: 0;
+    padding-bottom: 20px;
 }
 
 .first {
@@ -67,57 +64,146 @@ header {
 }
 
 .second {
-  display: flex;
-  justify-content: space-around;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    margin-top: 50px;
 }
 
-.second img {
-  display: block;
-  margin: auto;
-  width: 90%;
+.projects img {
+    display: block;
+    margin: auto;
+    width: 90%;
+    border: 1px transparent solid;
+    border-radius: 5px;
 }
 
-.adriatic img {
-  hover:
+.projects img:hover {
+    border: 1px #fff solid;
+}
+
+.projects img::after {}
+
+.third {
+    margin: 40px 20px 0px 20px;
+    padding-bottom: 20px;
 }
 
 .slider-2 {
-  background-image: url(images/design-ideas/grandcanyon2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 800px;
+    background-image: url(images/design-ideas/grandcanyon2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /*height: 800px;*/
+}
+
+.skills {
+    color: #fff;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 0 auto;
+    padding: 100px 5px 20px 5px;
+}
+
+.skills-pics {
+    padding: 40px;
+}
+
+.wordpress {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    padding-bottom: 50px;
 }
 
 .slider-2 p {
-  margin: 0;
+    margin: 0;
 }
 
-.slider-3 {
-  height: 800px;
+.connected {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+    margin-left: 0px;
 }
 
+.goodbye {
+    background-color: #fff;
+    position: absolute;
+    padding: 5px 25px 10px 25px;
+    border-radius: 4px;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    opacity: 0.7;
+    justify-content: center;
+}
+
+.goodbye::after {
+    content: url(images/tri.png);
+    position: relative;
+    top: 34px;
+    left: 0px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin:auto;
+  padding-bottom: 50px;
+}
+
+.social {
+  display: inline-block;
+    margin: 5px 10px 5px 10px;
+    width: 15%;
+}
+
+.social img:hover {
+  opacity: 0.8;
+}
+
+.social img:active {
+  opacity: 0.8;
+}
+
+
+
+footer {
+    background-color: #272827;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+
+}
+
+footer p {
+  margin-top: 0;
+}
+
+.heart {
+    color: red;
+}
 
 @media only screen and (max-width: 710px) {
-  body {
-    background-position: left -250px top 0px;
-  }
-
-  .slider {
-    height: 700px;
-  }
-
-  .second {
-    display: block;
-  }
-
-  .second img {
-    margin-top: 50px;
-
-  }
+    body {
+        background-position: left -250px top 0px;
+    }
+    .slider {}
+    .second {
+        display: block;
+    }
+    .second img {
+        margin-top: 50px;
+    }
 }
